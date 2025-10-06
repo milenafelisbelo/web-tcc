@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cadastro-box {
+  background-color: #2f6ea3;
+  padding: 40px;
+  width: 420px;
+  margin: 50px auto;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid #1e4f75;
+}
+
+h2 {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 2px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.input-group i {
+  color: #777;
+  font-size: 14px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  flex: 1;
+  font-size: 14px;
+}
+
+.label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.date select {
+  width: 32%;
+  padding: 8px;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+}
+
+.genero {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.genero label {
+  background-color: white;
+  padding: 8px 14px;
+  border-radius: 2px;
+  color: #000;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.genero input {
+  accent-color: #2f6ea3;
+}
+
+.btn {
+  background-color: #004e92;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #003a6d;
+}
+
+.info {
+  font-size: 11px;
+  margin: 12px 0;
+  line-height: 1.4;
+  opacity: 0.9;
+  text-align: justify;
+}
+
+.logo {
+  width: 80px;
+  margin-top: 15px;
+}

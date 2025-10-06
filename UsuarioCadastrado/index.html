@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pulse + Bem-Estar & Treino</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Pulse <strong>+</strong></a>
+      <nav class="nav">
+        <a href="#inicio">Início</a>
+        <a href="#programas">Programas</a>
+        <a href="#nutricao">Nutrição</a>
+        <a href="#mentais">Mentais</a>
+        <a href="#ferramentas">Ferramentas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section">
+      <div class="container grid-2">
+        <div class="stack">
+          <h1>Bem-vindo ao <span class="gradient">Pulse +</span></h1>
+          <p class="lead">Pulse +, é um site voltado para o cuidado integral da saúde mental, física e alimentar, oferecendo ferramentas práticas, conteúdo educativo e acompanhamento personalizado para promover o bem-estar dos usuários. Seu espaço para treinos, hábitos saudáveis e acompanhamento do bem-estar diário.</p>
+        </div>
+        <div class="hero-card img">
+          <img src="../imgs/pessoa alongando.jpg" alt="Pessoa alongando" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Programas -->
+    <section id="programas" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Programas de Treino</h2>
+          <p>Escolha um objetivo e siga o passo a passo.</p>
+        </header>
+        <div class="cards grid-3">
+          <article class="card program" data-id="mobilidade">
+            <h3>Programas de Treino</h3>
+            <p>Treine em casa com exercicios prontos ou crie seu próprio treino de acordo com sua preferência.</p>
+            <a href="../treino/index.html" class="btn small">Ver plano</a>  
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Nutrição -->
+    <section id="nutricao" class="section">
+  <div class="container">
+    <header class="section-head">
+      <h2>Nutrição & Hábitos</h2>
+      <p>Dicas de como pequenas escolhas que fazem diferença.</p>
+    </header>
+
+    <div class="grid-3">
+      <div class="card tip">
+        <h4>Prato Colorido</h4>
+        <p>Monte seu prato com ½ vegetais, ¼ proteína e ¼ carboidrato.</p>
+      </div>
+      <div class="card tip">
+        <h4>Proteína em cada refeição</h4>
+        <p>O alvo comum é 1,6–2,2 g/kg/dia distribuído ao longo do dia.</p>
+      </div>
+      <div class="card tip">
+        <h4>Sono é treinamento</h4>
+        <p>Apague telas 60 min antes de dormir e mantenha rotina regular.</p>
+      </div>
+
+
+
+      <div class="card tip">
+        <h4>Hidratação</h4>
+        <p>Beba água ao longo do dia. Tente 2 litros.</p>
+      </div>
+      <div class="card tip">
+        <h4>Evite Processados</h4>
+        <p>Prefira comida fresca. Evite refrigerantes e fast food.</p>
+      </div>
+      <div class="card tip">
+        <h4>Carboidrato Integral</h4>
+        <p>Escolha arroz integral, batata-doce, quinoa, etc.</p>
+      </div>
+      <div class="card tip">
+        <h4>Proteína Variada</h4>
+        <p>Inclua carnes magras, ovos, feijão e tofu.</p>
+      </div>
+      <div class="card tip">
+        <h4>Gorduras Boas</h4>
+        <p>Consuma abacate, azeite, nozes e peixes.</p>
+      </div>
+      <div class="card tip">
+        <h4>Porções Controladas</h4>
+        <p>Use pratos menores para evitar exageros.</p>
+      </div>
+      <div class="card tip">
+        <h4>Coma de 3 em 3 horas</h4>
+        <p>Evite ficar muito tempo sem comer.</p>
+      </div>
+    </div>
+
+    <div class="subscribe card">
+      <h3>Receba um plano semanal por e-mail</h3>
+      <div class="row gap">
+        <input id="email" type="email" placeholder="seu@email.com" />
+        <button id="subscribe" class="btn primary">Quero receber</button>
+      </div>
+      <p id="subMsg" class="muted"></p>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Dados Mentais -->
+  <section id="mentais" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h2>Dados Mentais</h2>
+        <p>Converse com a IA para acompanhar seu bem-estar mental.</p>
+      </header>
+
+      <div class="chatIA">
+        <h3>Converse com IA</h3>
+        <div class="row gap">
+          <button class="btn primary">Conversar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Ferramentas -->
+<section id="ferramentas" class="section alt">
+  <div class="container grid-2">
+    <div class="card tool">
+      <h3 class="tool-title">Timer de Treino</h3>
+      <label class="field">
+        <span>Duração (min):</span>
+        <input id="timerMinutes" type="number" min="1" value="10"/>
+      </label>
+      <div class="row gap">
+        <button id="startTimer" class="btn primary">Iniciar</button>
+        <button id="resetTimer" class="btn ghost">Resetar</button>
+      </div>
+      <div class="timer-display"><span id="timer">10:00</span></div>
+      <div class="row gap">
+        <button class="btn small outline" id="addWater">+ água</button>
+      </div>
+    </div>
+
+    <div class="card tool">
+      <h3 class="tool-title">Calculadora de IMC</h3>
+      <div class="grid-2">
+        <label class="field">
+          <span>Peso (kg)</span>
+          <input id="peso" type="number" min="1" step="0.1" />
+        </label>
+        <label class="field">
+          <span>Altura (cm)</span>
+          <input id="altura" type="number" min="50" step="0.1" />
+        </label>
+      </div>
+      <button id="calcImc" class="btn">Calcular</button>
+      <p class="result">IMC: <strong id="imcValor">—</strong> <span id="imcLabel"></span></p>
+      <small class="muted">* Use como triagem geral, não substitui avaliação médica.</small>
+    </div>
+    <div class="card tool">
+      <h3 class="tool-title">TMB & Calorias</h3>
+      <div class="grid-3">
+        <label class="field">
+          <span>Sexo</span>
+          <select id="sexo">
+            <option value="">—</option>
+            <option value="f">Feminino</option>
+            <option value="m">Masculino</option>
+          </select>
+        </label>
+        <label class="field"><span>Idade</span><input id="idade" type="number" min="10" /></label>
+        <label class="field"><span>Altura (cm)</span><input id="tmbAltura" type="number" min="50" /></label>
+      </div>
+      <div class="grid-2">
+        <label class="field"><span>Peso (kg)</span><input id="tmbPeso" type="number" min="1" step="0.1" /></label>
+        <label class="field">
+          <span>Atividade</span>
+          <select id="atividade">
+            <option value="1.2">Sedentária</option>
+            <option value="1.375">Leve (1–3x/sem)</option>
+            <option value="1.55" selected>Moderada (3–5x/sem)</option>
+            <option value="1.725">Intensa (6–7x/sem)</option>
+            <option value="1.9">Muito intensa</option>
+          </select>
+        </label>
+      </div>
+      <button id="calcTmb" class="btn">Calcular</button>
+      <p class="result">
+        TMB: <strong id="tmbValor">—</strong> kcal/dia<br/>
+        Manutenção: <strong id="manutencaoValor">—</strong> kcal/dia
+      </p>
+    </div>
+
+    <div class="card tool">
+      <h3 class="tool-title">Sequência & Notas</h3>
+      <p>Marque seu dia concluído e escreva como foi o treino.</p>
+      <div class="row gap">
+        <button id="completeDay" class="btn primary">Concluir dia</button>
+        <button id="clearProgress" class="btn ghost">Limpar</button>
+      </div>
+      <label class="field">
+        <span>Notas de hoje</span>
+        <textarea id="notes" rows="4" placeholder="Ex.: 30 min caminhada + alongamento"></textarea>
+      </label>
+      <button id="saveNotes" class="btn">Salvar notas</button>
+      <div class="notes-list" id="notesList"></div>
+    </div>
+  </div>
+</section>
+
+
+
+     <!-- Contato -->
+    <section id="contato" class="section alt">
+  <div class="container grid-2">
+    <div class="contact-info">
+      <h2>Fale com a gente</h2>
+      <p>Dúvidas ou sugestões? Vamos adorar ouvir você.</p>
+      <ul class="contact">
+        <li>E-mail: pulse-mais-app@gmail.com</li>
+        <li>Telefone: (11) 11111-1111</li>
+        <li>CEP: Brasil</li>
+      </ul>
+
+    </div>
+    <form id="contactForm" class="card">
+      <label class="field"><span>Nome</span><input id="cNome" required /></label>
+      <label class="field"><span>E-mail</span><input id="cEmail" type="email" required /></label>
+      <label class="field"><span>Mensagem</span><textarea id="cMsg" rows="4" required></textarea></label>
+      <button class="btn primary" type="submit">Enviar</button>
+      <p id="contactMsg" class="muted"></p>
+    </form>
+  </div>
+</section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Viva Leve — Exercícios & Bem-Estar</p>
+      <a href="#inicio" class="top">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <dialog id="planoModal">
+    <div class="modal card">
+      <button id="closePlano" class="close" aria-label="Fechar">X</button>
+      <h3 id="planoTitulo">Plano</h3>
+      <div id="planoConteudo" class="plan-content"></div>
+      <div class="row gap end">
+        <button id="addPlanoHoje" class="btn">Adicionar ao dia</button>
+        <button id="salvarPlano" class="btn primary">Salvar no dispositivo</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

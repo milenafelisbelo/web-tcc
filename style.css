@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f8fbff;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255,255,255,.95);
+  border-bottom: 1px solid #e0e6ef;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #1f1f1f;
+}
+
+.nav a:hover {
+  color: #004080;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #41729F;
+  color: #004080;
+  background: #fff;
+}
+
+.btn:hover {
+  background: #41729F;
+  color: #fff;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #41729F, #004080);
+  color: #fff;
+  border: none;
+}
+
+.btn-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 20px;
+}
+
+@media(min-width:920px){
+  .grid-2 { grid-template-columns: 1fr 1fr; }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #41729F, #004080);
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e6ef;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.05);
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,.1);
+}
+
+.grid-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lead {
+  color: #6b6b6b;
+}
+
+h2 {
+  color: #004080;
+}
+
+.site-footer {
+  border-top: 1px solid #e0e6ef;
+  padding: 15px 0;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.site-footer a.top {
+  display: inline-block;
+  margin-top: 8px;
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}

@@ -1,0 +1,115 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f9fbfd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 12px;
+}
+
+h2 {
+  color: #004080;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.slogan {
+  color: #222;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  width: 330px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 13px;
+  margin-bottom: 4px;
+  color: #333;
+  font-weight: 500;
+}
+
+input {
+  padding: 11px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #41729F;
+  box-shadow: 0 0 5px rgba(65,114,159,0.25);
+}
+
+.btn {
+  background-color: #41729F;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #335d7e;
+}
+
+.link {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #41729F;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.check {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #444;
+}
+
+.check a {
+  color: #41729F;
+  text-decoration: none;
+}
+
+.check a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="cadastro-box">
+    <h2>CADASTRE-SE ABAIXO</h2>
+    <form id="form-cadastro">
+      <div class="input-group">
+        <i class="fa fa-user"></i>
+        <input type="text" id="nome" placeholder="Nome completo" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <input type="email" id="email" placeholder="Celular ou e-mail" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="senha" placeholder="Senha" required>
+      </div>
+
+      <label class="label">Data de nascimento:</label>
+      <div class="date">
+        <select id="ano"><option value="">Ano</option></select>
+        <select id="mes"><option value="">Mês</option></select>
+        <select id="dia"><option value="">Dia</option></select>
+      </div>
+
+      <label class="label">Gênero:</label>
+      <div class="genero">
+        <label><input type="radio" name="genero" value="FEMININO" required> F</label>
+        <label><input type="radio" name="genero" value="MASCULINO" required> M</label>
+      </div>
+
+      <p class="info">
+        As pessoas que usam nosso serviço podem ter carregado suas informações de contato no Medium.<br><br>
+        Ao clicar em Cadastrar-se, você concorda com nossos Termos, Política de Privacidade e Política de Cookies.
+        Você poderá receber notificações por SMS e cancelar quando quiser.
+      </p>
+
+      <button type="submit" class="btn">CADASTRAR-SE</button>
+    </form>
+  </div>
+
+  <img src="../imgs/logo.jpeg" class="logo">
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,380 @@
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f8fbff;
+  color: #1f1f1f;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  color: #004080;
+}
+
+.lead {
+  font-size: 1.05rem;
+  color: #6b6b6b;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e0e6ef;
+  padding: 10px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: bold;
+  color: #004080;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 15px;
+  color: #1f1f1f;
+}
+
+.nav a:hover {
+  color: #004080;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid #41729F;
+  color: #004080;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #41729F;
+  color: #fff;
+}
+
+.btn.primary {
+  background: linear-gradient(135deg, #41729F, #004080);
+  color: #fff;
+  border: none;
+}
+
+.btn.small {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+.btn.ghost,
+.btn.outline {
+  background: transparent;
+  border: 1px solid #41729F;
+  color: #004080;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.section.alt {
+  background: linear-gradient(0deg, transparent 0%, rgba(0,0,0,0.03) 100%);
+}
+
+.section-head {
+  margin-bottom: 1.5rem;
+}
+
+.section-head h2 {
+  margin: 0 0 0.3rem;
+  font-size: 2rem;
+}
+
+.hero {
+  padding: 40px 0;
+}
+
+.grid-2 {
+  display: grid;
+  gap: 20px;
+}
+
+@media (min-width: 920px) {
+  .grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #41729F, #004080);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e6ef;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 20px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transform: translateY(-3px);
+}
+
+.grid-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    flex-direction: row;
+  }
+}
+
+.site-footer {
+  border-top: 1px solid #e0e6ef;
+  padding: 15px 0;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.site-footer a.top {
+  display: inline-block;
+  margin-top: 8px;
+  color: #004080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#ferramentas .card.tool,
+#nutricao .card.tip,
+#contato form.card {
+  background: #f0f5fb;
+  border: 1px solid #d0d8e8;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#ferramentas .tool-title {
+  color: #004080;
+  font-size: 1.4rem;
+}
+
+#ferramentas .field span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#ferramentas .field input,
+#ferramentas .field select,
+#ferramentas .field textarea,
+#nutricao .subscribe input,
+#contato form input,
+#contato form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #c0c8d8;
+  font-size: 0.95rem;
+}
+
+#ferramentas .row.gap,
+#nutricao .subscribe .row.gap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+#ferramentas .timer-display {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#ferramentas .result {
+  font-weight: 600;
+  color: #004080;
+}
+
+#ferramentas .notes-list {
+  margin-top: 10px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #d0d8e8;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#ferramentas .container.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 920px) {
+  #ferramentas .container.grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* === NUTRIÇÃO CARROSSEL === */
+#nutricao .grid-3 {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+#nutricao .grid-3::-webkit-scrollbar {
+  height: 8px;
+}
+#nutricao .grid-3::-webkit-scrollbar-thumb {
+  background: #c0c8d8;
+  border-radius: 10px;
+}
+
+#nutricao .card.tip {
+  flex: 0 0 80%; /* ocupa quase toda tela no mobile */
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  #nutricao .card.tip {
+    flex: 0 0 calc(33.333% - 20px); /* 3 cards lado a lado no desktop */
+  }
+}
+
+#nutricao .subscribe {
+  margin-top: 30px;
+  text-align: center;
+}
+
+#contato .container.grid-2 {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  #contato .container.grid-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === CHAT IA === */
+.chatIA {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chat-box {
+  background: #f9f9f9;
+  border: 1px solid #d0d8e8;
+  border-radius: 10px;
+  padding: 10px;
+  height: 250px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-box .msg {
+  padding: 8px 12px;
+  margin: 6px 0;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+}
+
+.chat-box .user {
+  background: #d1e7ff;
+  align-self: flex-end;
+}
+
+.chat-box .bot {
+  background: #e8f5e9;
+  align-self: flex-start;
+}
+
+
+#contato .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#contato .contact-info h2 {
+  color: #004080;
+  font-size: 1.8rem;
+}
+
+#contato .contact-info p {
+  color: #6b6b6b;
+}
+
+#contato .contact {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+#contato .contact li {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+#contato form button.btn {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+#planoModal {
+  border: none;
+  padding: 0;
+}
+
+#planoModal .modal {
+  width: 90%;
+  max-width: 500px;
+}
